@@ -13,7 +13,7 @@
 - 按关键帧、切点、动作连续性和剧情覆盖进行渲染检查。
 - 制作任务交付 `.blend`、英雄机位图、白模预演视频及分镜和 QA 记录。
 
-这是供 AI 编程代理读取的技能指令，不是 Blender 插件或独立的一键生成程序。实际制作需要可执行 Blender 操作的环境；可搭配 Blender MCP。不同剧本的完成度仍须通过实际渲染验证。
+这是供 AI 编程代理读取的技能指令（SKILL.md 格式），不是 Blender 插件或独立的一键生成程序。实际制作需要可执行 Blender 操作的环境；可搭配 Blender MCP。已在 DeepSeek Harness（DSH）中以 skill 形式验证可用，见下方安装说明。不同剧本的完成度仍须通过实际渲染验证。
 
 ## 安装
 
@@ -24,6 +24,21 @@ Windows PowerShell 示例：
 ```powershell
 git clone https://github.com/Dogwind221/cinematic-whitebox.git "$env:USERPROFILE\.codex\skills\cinematic-whitebox"
 ```
+
+### 在 DeepSeek Harness（DSH）中使用
+
+这是一个 `SKILL.md` 形式的技能，DSH 从个人技能目录加载，用同样的方式克隆：
+
+```powershell
+git clone https://github.com/Dogwind221/cinematic-whitebox.git "$env:USERPROFILE\.agents\skills\cinematic-whitebox"
+```
+
+依赖：
+
+- **`blender-mcp`**（或任何能执行 Blender Python 的能力）——实际建模、设机位、渲染都通过它完成。
+- 可选 **`video-deconstruct`**——需要拉片分析参考视频时使用。
+
+在 DSH 会话里用 `$cinematic-whitebox` 触发，或直接说明"使用 cinematic-whitebox 技能"。
 
 ## 使用
 
