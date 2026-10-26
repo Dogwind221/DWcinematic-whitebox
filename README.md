@@ -1,4 +1,4 @@
-# 白模镜头导演 · cinematic-whitebox
+# 白模镜头导演 · DWcinematic-whitebox
 
 读取不同题材的剧本，以《繁花》的构图、人物光影与情绪节奏为默认方向，结合动作驱动运镜，指导 AI 在 Blender 中制作可编辑的白模剧情预演。
 
@@ -22,7 +22,7 @@
 Windows PowerShell 示例：
 
 ```powershell
-git clone https://github.com/Dogwind221/cinematic-whitebox.git "$env:USERPROFILE\.codex\skills\cinematic-whitebox"
+git clone https://github.com/Dogwind221/DWcinematic-whitebox.git "$env:USERPROFILE\.codex\skills\cinematic-whitebox"
 ```
 
 ### 在 DeepSeek Harness（DSH）中使用
@@ -30,7 +30,7 @@ git clone https://github.com/Dogwind221/cinematic-whitebox.git "$env:USERPROFILE
 这是一个 `SKILL.md` 形式的技能，DSH 从个人技能目录加载，用同样的方式克隆：
 
 ```powershell
-git clone https://github.com/Dogwind221/cinematic-whitebox.git "$env:USERPROFILE\.agents\skills\cinematic-whitebox"
+git clone https://github.com/Dogwind221/DWcinematic-whitebox.git "$env:USERPROFILE\.agents\skills\cinematic-whitebox"
 ```
 
 依赖：
